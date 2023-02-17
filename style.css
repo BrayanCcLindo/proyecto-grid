@@ -1,0 +1,43 @@
+.conteiner{
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: 100px 500px 100px ;
+    grid-template-areas: "header header" "Siderbar Main" "footer footer ";
+    gap: 40px;
+}
+
+.item{
+    border: 5px solid red;
+    counter-increment: item;
+}
+
+.item::before{
+    content: counter(item);
+}
+
+.item:nth-child(1){
+    grid-area: header;
+    border-color: red;
+
+}
+
+.item:nth-child(2){
+    grid-area: Siderbar;
+    border-color: blue;
+
+
+}
+
+.item:nth-child(3){
+    grid-area: Main;
+
+    border-color: orange;
+
+}
+.item:nth-child(4){
+    grid-area: footer;
+    border-color: purple;
+    margin-inline-start: 20px;
+
+
+}
