@@ -19,6 +19,7 @@
 .item:nth-child(1){
     grid-area: header;
     border-color: red;
+    margin-top: 20px;
 
 }
 
