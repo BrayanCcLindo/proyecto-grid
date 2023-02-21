@@ -1,10 +1,12 @@
 .conteiner{
-    border: 5px solid red;
+    border: 2px solid purple;
     display: grid;
-    grid-template-columns: 300px 300px ;
-    grid-template-rows: 100px 500px 100px ;
-    grid-template-areas: "header header" "Siderbar Main" "footer footer ";
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    block-size: 100vh;
+
+
 }
 
 .item{
@@ -17,29 +19,21 @@
 }
 
 .item:nth-child(1){
-    grid-area: header;
-    border-color: red;
-    margin-top: 20px;
+
 
 }
 
 .item:nth-child(2){
-    grid-area: Siderbar;
-    border-color: blue;
+
 
 
 }
 
 .item:nth-child(3){
-    grid-area: Main;
-
-    border-color: orange;
 
 }
 .item:nth-child(4){
-    grid-area: footer;
-    border-color: purple;
-    margin-inline-start: 20px;
+
 
 
 }
