@@ -1,3 +1,5 @@
+@ts-ignore 
+
 .conteiner{
     border: 2px solid purple;
     display: grid;
