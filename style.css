@@ -50,7 +50,14 @@
 
 }
 .item:nth-child(4){
+    border-color: green;
 
+}
 
+h1{
+    font-size: 40px;
+    color: #f2f2f2;
+    background: red;
+    text-align: center;
 
 }
